@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("/assets/fonts/sanfranciscodisplay-regular-webfont.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(245, 245, 245, 0.8);
+  background-blend-mode: hard-light;
+  backdrop-filter: blur(40px);
+  border-radius: 11px 11px 0px 0px;
+  padding: 19px 21px;
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(0.5);
+}
+
+.section-left,
+.section-right,
+.section-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions-browser {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.circle-action-button {
+  width: 12px;
+  height: 12px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.circle-action-button.close {
+  background: #f96057;
+}
+
+.circle-action-button.minimize {
+  background: #f8ce52;
+}
+
+.circle-action-button.zoom {
+  background: #5fcf65;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+}
+
+.wrapper-input {
+  height: 26px;
+  width: 576px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 24px;
+  opacity: 0.5;
+}
+
+.wrapper-input input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 183px;
+  height: 100%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-right {
+  margin-left: 16px;
+}
+
+.mr-11 {
+  margin-right: 11px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
